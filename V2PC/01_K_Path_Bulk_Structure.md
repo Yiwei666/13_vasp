@@ -1,7 +1,9 @@
 # vaspkit生成KPOINT文件
 
 
-- **利用vaspkit输出能带计算的精确K点，只需要POSCAR文件**
+- **输入文件和计算步骤**
+
+利用vaspkit输出能带计算的精确K点，只需要POSCAR文件
 
 ```
 vaspkit --> 3 --> 303
