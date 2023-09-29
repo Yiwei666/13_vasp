@@ -145,4 +145,18 @@ vaspkit --> 3 --> 303
 ```
 
 
+# 参考资料
+
+- https://zhuanlan.zhihu.com/p/526969630
+- https://zhuanlan.zhihu.com/p/564983969
+
+
+
+
+
+
+
+
+
+
 
