@@ -36,7 +36,7 @@ vaspkit --> 3 --> 303
 
 
 
-- **vaspkit终端输出信息**
+- **vaspkit输出KPOINTS信息**
 
 ```
 (base) [root@iZ2zehkhkwkx4pmvvjw2dlZ 01_V2PC]# vaspkit
@@ -145,6 +145,125 @@ vaspkit --> 3 --> 303
  o---------------------------------------------------------------o
 
 ```
+
+- **导出能带**
+
+```
+ ===================== Structural Utilities ======================
+ 1)  VASP Input-Files Generator    2)  Mechanical Properties      
+ 3)  K-Path for Band-Structure     4)  Structure Editor           
+ 5)  Catalysis-ElectroChem Kit     6)  Symmetry Analysis          
+ 7)  Materials Databases           8)  Advanced Structure Models  
+ ===================== Electronic Utilities ======================
+ 11) Density-of-States             21) Band-Structure             
+ 23) 3D Band-Structure             25) Hybrid-DFT Band-Structure  
+ 26) Fermi-Surface                 28) Band-Structure Unfolding   
+ 31) Charge-Density Analysis       42) Potential Analysis         
+ 51) Wave-Function Analysis        62) Magnetic Properties        
+ 65) Spin-Texture                  68) Transport Properties       
+ ======================== Misc Utilities =========================
+ 71) Optical Properties            72) Molecular-Dynamics Kit     
+ 74) User Interface                78) VASP2other Interface       
+ 91) Semiconductor Kit             92) 2D-Material Kit            
+ 0)  Quit                                                         
+ ------------>>
+21
+ ============================ Band Options =======================
+ 211) Band-Structure                                              
+ 212) Projected Band-Structure of Only-One-Selected Atom          
+ 213) Projected Band-Structure of Each Element                    
+ 214) Projected Band-Structure of Selected Atoms                  
+ 215) Projected Band-Structure by Element-Weights                 
+ 216) The Sum of Projected Band for Selected Atoms and Orbitals   
+                                                                  
+ 0)   Quit                                                        
+ 9)   Back                                                        
+ ------------>>
+211
+ -->> (01) Reading Input Parameters From INCAR File...
+ +---------------------------------------------------------------+
+ |       >>> The Fermi Energy will be set to zero eV <<<         |
+ +---------------------------------------------------------------+
+ -->> (02) Reading Fermi-Energy from DOSCAR File...
+ -->> (03) Reading Structure from POSCAR File...
+ -->> (04) Reading Energy-Levels From EIGENVAL File...
+ -->> (05) Reading K-Path From KPOINTS File...
+ -->> (06) Written KLABELS File!
+ +---------------------------- Tip ------------------------------+
+ If You Want to Get Fine Band Structrue by Interpolating Method.
+ You CAN set GET_INTERPOLATED_DATA = .TRUE. in ~/.vaspkit file.
+ +---------------------------------------------------------------+
+ -->> (07) Written BAND.dat File!
+ -->> (08) Written REFORMATTED_BAND_UP/DW.dat Files!
+ -->> (09) Written KLINES.dat File!
+ +-------------------------- Summary ----------------------------+
+ +---------------------------------------------------------------+
+ -->> (10) Written BAND_GAP File!
+
+```
+
+
+
+- **导出态密度**
+
+```
+ ===================== Structural Utilities ======================
+ 1)  VASP Input-Files Generator    2)  Mechanical Properties      
+ 3)  K-Path for Band-Structure     4)  Structure Editor           
+ 5)  Catalysis-ElectroChem Kit     6)  Symmetry Analysis          
+ 7)  Materials Databases           8)  Advanced Structure Models  
+ ===================== Electronic Utilities ======================
+ 11) Density-of-States             21) Band-Structure             
+ 23) 3D Band-Structure             25) Hybrid-DFT Band-Structure  
+ 26) Fermi-Surface                 28) Band-Structure Unfolding   
+ 31) Charge-Density Analysis       42) Potential Analysis         
+ 51) Wave-Function Analysis        62) Magnetic Properties        
+ 65) Spin-Texture                  68) Transport Properties       
+ ======================== Misc Utilities =========================
+ 71) Optical Properties            72) Molecular-Dynamics Kit     
+ 74) User Interface                78) VASP2other Interface       
+ 91) Semiconductor Kit             92) 2D-Material Kit            
+ 0)  Quit                                                         
+ ------------>>
+11
+ ============================ DOS Options ========================
+ 111) Total Density-of-States                                     
+ 112) Projected Density-of-States of Selected One Atom            
+ 113) Projected Density-of-States of Each Element                 
+ 114) Projected Density-of-States of Selected Atoms               
+ 115) Projected Density-of-States of Selected Atoms and Orbitals  
+ 116) Local Density-of-States of Each Element                     
+ 117) Total Density-of-States from EIGENVAL File                  
+ 118) Projected Density-of-States from EIGENVAL and PROCAR Files  
+ 119) Projected Density-of-States of Specified K-Indexes            
+ 120) Projected Density-of-States of Specified Band-Indexes         
+                                                                  
+ ====================== Real-Space DOS Options ===================
+ 123) 3D Spatially-Resolved DOS in Specified Energy Range   
+ 124) 3D Spatially-Resolved Magnetic DOS in Specified Energy Range
+ 125) 2D Plane-Averaged Spatially-Resolved DOS                    
+ 126) 2D Plane-Averaged Spatially-Resolved Magnetic DOS           
+                                                                  
+ 0)   Quit                                                        
+ 9)   Back                                                        
+ ------------>>
+113
+ -->> (01) Reading Input Parameters From INCAR File...
+ +---------------------------------------------------------------+
+ |       >>> The Fermi Energy will be set to zero eV <<<         |
+ +---------------------------------------------------------------+
+ -->> (02) Reading Fermi-Energy from DOSCAR File...
+ -->> (03) Reading DOS Data From DOSCAR File...
+ -->> (04) Reading Structure from POSCAR File...
+ -->> (05) Written PDOS_V_UP/DW.dat Files!
+ -->> (06) Written IPDOS_V_UP/DW.dat Files!
+ -->> (07) Written PDOS_P_UP/DW.dat Files!
+ -->> (08) Written IPDOS_P_UP/DW.dat Files!
+ -->> (09) Written PDOS_C_UP/DW.dat Files!
+ -->> (10) Written IPDOS_C_UP/DW.dat Files!
+```
+
+
 
 
 # 参考资料
