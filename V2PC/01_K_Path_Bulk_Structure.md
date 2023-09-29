@@ -1,4 +1,7 @@
 
+- 输出能带计算的精确K点
+
+vaspkit --> 3 --> 303
 
 ```
 (base) [root@iZ2zehkhkwkx4pmvvjw2dlZ 01_V2PC]# vaspkit
