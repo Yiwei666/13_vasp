@@ -1,7 +1,27 @@
+# 文件说明
 
-- 输出能带计算的精确K点
 
+- **利用vaspkit输出能带计算的精确K点，只需要POSCAR文件**
+
+```
 vaspkit --> 3 --> 303
+```
+
+- **输出文件结构**
+
+```
+.
+├── HIGH_SYMMETRY_POINTS
+├── INCAR
+├── KPATH.in
+├── POSCAR
+├── POTCAR
+├── PRIMCELL.vasp
+└── SYMMETRY
+
+```
+
+- **终端输出信息**
 
 ```
 (base) [root@iZ2zehkhkwkx4pmvvjw2dlZ 01_V2PC]# vaspkit
