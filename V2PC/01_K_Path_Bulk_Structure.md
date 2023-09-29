@@ -21,6 +21,19 @@ vaspkit --> 3 --> 303
 
 ```
 
+1. Do NOT forget to copy PRIMCELL.vasp to POSCAR 
+2. 将 KPATH.in 文件复制粘贴成 KPOINTS 文件
+3. 修改INCAR文件，主要设置如下
+ ```
+ ISTART=1
+ ICHARG=11
+ LCHARG = .FALSE.
+ LORBIT=11 # or 10,算投影能带有用
+ ```
+4. 将修改后的 INCAR、POTCAR、POSCAR 、KPOINTS 以及 CHGCAR 重新提交计算
+
+
+
 - **终端输出信息**
 
 ```
