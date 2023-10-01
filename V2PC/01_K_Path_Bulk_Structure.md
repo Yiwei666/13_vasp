@@ -1,4 +1,4 @@
-# vaspkit生成KPOINT文件
+# VASPKIT生成KPOINT文件
 
 
 - **vaspkit输入文件和计算步骤**
