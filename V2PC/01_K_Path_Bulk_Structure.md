@@ -72,6 +72,13 @@ Reciprocal
 
 - **vaspkit输出KPOINTS信息**
 
+操作流程
+
+```
+vaspkit --> 3 --> 303
+```
+
+
 ```
 (base) [root@iZ2zehkhkwkx4pmvvjw2dlZ 01_V2PC]# vaspkit
  
@@ -181,6 +188,14 @@ Reciprocal
 ```
 
 # VASPKIT导出能带数据
+
+- **操作流程**
+
+```
+vaspkit --> 21 --> 211
+```
+
+
 
 ```
  ===================== Structural Utilities ======================
