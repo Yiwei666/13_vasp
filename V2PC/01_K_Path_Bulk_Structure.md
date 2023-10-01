@@ -195,6 +195,32 @@ vaspkit --> 3 --> 303
 vaspkit --> 21 --> 211
 ```
 
+- **输入文件和输出文件**
+
+输入文件
+
+```
+ -->> (01) Reading Input Parameters From INCAR File...
+ +---------------------------------------------------------------+
+ |       >>> The Fermi Energy will be set to zero eV <<<         |
+ +---------------------------------------------------------------+
+ -->> (02) Reading Fermi-Energy from DOSCAR File...
+ -->> (03) Reading Structure from POSCAR File...
+ -->> (04) Reading Energy-Levels From EIGENVAL File...
+ -->> (05) Reading K-Path From KPOINTS File...
+ -->> (06) Written KLABELS File!
+```
+
+输出文件
+
+```
+ -->> (07) Written BAND.dat File!
+ -->> (08) Written REFORMATTED_BAND_UP/DW.dat Files!
+ -->> (09) Written KLINES.dat File!
+```
+
+
+
 - **vaspkit导出能带终端输出信息**
 
 ```
