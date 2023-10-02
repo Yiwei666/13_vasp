@@ -1,5 +1,11 @@
-# VASPKIT生成KPOINT文件
+# 项目功能
 
+- VASPKIT生成用于能带非自洽计算的KPOINTS文件和POSCAR文件
+- VASPKIT导出用于能带绘图的数据
+- VASPKIT导出用于态密度绘图的数据
+
+
+# VASPKIT生成KPOINT文件
 
 - **vaspkit输入文件和计算步骤**
 
