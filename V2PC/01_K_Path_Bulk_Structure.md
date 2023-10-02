@@ -201,9 +201,9 @@ vaspkit --> 3 --> 303
 vaspkit --> 21 --> 211
 ```
 
-- **输入文件和输出文件**
+- **vaspkit读取文件和输出文件**
 
-输入文件：INCAR，DOSCAR，POSCAR，EIGENVAL 和 KPOINTS
+读取文件：INCAR，DOSCAR，POSCAR，EIGENVAL 和 KPOINTS
 
 ```
  -->> (01) Reading Input Parameters From INCAR File...
@@ -286,6 +286,38 @@ vaspkit --> 21 --> 211
 
 
 # VASPKIT导出态密度数据
+
+- **操作流程**
+
+```
+vaspkit --> 11 --> 113
+```
+
+- **vaspkit读取文件和输出文件**
+
+读取文件
+
+```
+ -->> (01) Reading Input Parameters From INCAR File...
+ +---------------------------------------------------------------+
+ |       >>> The Fermi Energy will be set to zero eV <<<         |
+ +---------------------------------------------------------------+
+ -->> (02) Reading Fermi-Energy from DOSCAR File...
+ -->> (03) Reading DOS Data From DOSCAR File...
+ -->> (04) Reading Structure from POSCAR File...
+```
+
+输出文件
+
+```
+ -->> (05) Written PDOS_V_UP/DW.dat Files!
+ -->> (06) Written IPDOS_V_UP/DW.dat Files!
+ -->> (07) Written PDOS_P_UP/DW.dat Files!
+ -->> (08) Written IPDOS_P_UP/DW.dat Files!
+ -->> (09) Written PDOS_C_UP/DW.dat Files!
+ -->> (10) Written IPDOS_C_UP/DW.dat Files!
+```
+
 
 ```
  ===================== Structural Utilities ======================
