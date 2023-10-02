@@ -318,6 +318,7 @@ vaspkit --> 11 --> 113
  -->> (10) Written IPDOS_C_UP/DW.dat Files!
 ```
 
+- **vaspkit导出态密度终端输出信息**
 
 ```
  ===================== Structural Utilities ======================
