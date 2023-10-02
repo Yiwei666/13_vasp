@@ -295,7 +295,7 @@ vaspkit --> 11 --> 113
 
 - **vaspkit读取文件和输出文件**
 
-读取文件
+读取文件：INCAR，DOSCAR，POSCAR 等文件
 
 ```
  -->> (01) Reading Input Parameters From INCAR File...
@@ -307,7 +307,7 @@ vaspkit --> 11 --> 113
  -->> (04) Reading Structure from POSCAR File...
 ```
 
-输出文件
+输出文件：各种元素的 PDOS_V_UP/DW.dat 和 IPDOS_V_UP/DW.dat
 
 ```
  -->> (05) Written PDOS_V_UP/DW.dat Files!
